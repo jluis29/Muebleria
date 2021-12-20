@@ -16,3 +16,9 @@ C:\Users\JORGE\Desktop\VENTAS\010_VENTAS_WEB_Proyecto\CapaModelo\obj\Debug\CapaM
 C:\Users\JORGE\Desktop\VENTAS\010_VENTAS_WEB_Proyecto\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
 C:\Users\JORGE\Desktop\VENTAS\010_VENTAS_WEB_Proyecto\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Users\JORGE\Desktop\VENTAS\010_VENTAS_WEB_Proyecto\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\usuario\Desktop\muebleria compartida\Muebleria\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\usuario\Desktop\muebleria compartida\Muebleria\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\usuario\Desktop\muebleria compartida\Muebleria\CapaModelo\obj\Debug\CapaModelo.csproj.AssemblyReference.cache
+C:\Users\usuario\Desktop\muebleria compartida\Muebleria\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\muebleria compartida\Muebleria\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\usuario\Desktop\muebleria compartida\Muebleria\CapaModelo\obj\Debug\CapaModelo.pdb
