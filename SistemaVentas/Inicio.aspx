@@ -36,6 +36,7 @@
     <div id="axis" class="one">
          <img value="Menu" class="object van move-right" height="500" width="600" src="https://1.bp.blogspot.com/-ml4Hw4h1dHg/Xd6-NExWz1I/AAAAAAABVVM/TpGA0KyR32UUnl2mJvQs4vnUvpfIaV5sQCLcBGAsYHQ/s1600/cat-casagrande12-19.jpg"/>
     </div>
+    <label>nuevo</label>
 
 </asp:Content>
 

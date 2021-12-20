@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7ca6402e-cd5e-4372-9f9f-2cd5d1805aec": {
+      "ProjectGuid": "7ca6402e-cd5e-4372-9f9f-2cd5d1805aec",
+      "DisplayName": "SistemaVentas",
+      "ColorIndex": 0
+    },
+    "2e29b887-97a3-47a9-b0f8-fb30eed30c3c": {
+      "ProjectGuid": "2e29b887-97a3-47a9-b0f8-fb30eed30c3c",
+      "DisplayName": "CapaDatos",
+      "ColorIndex": 1
+    },
+    "331f024e-b461-440d-a50b-ff6c79311af3": {
+      "ProjectGuid": "331f024e-b461-440d-a50b-ff6c79311af3",
+      "DisplayName": "CapaModelo",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
