@@ -26,6 +26,8 @@
                                             <th>Descripcion</th>
                                             <th>Categoria</th>
                                             <th>Estado</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -78,6 +80,20 @@
                 <div class="col-sm-10">
                     <select class="form-control form-control-sm model" id="cboCategoria" name="Categoria">
                     </select>
+                </div>
+              </div>
+
+                  <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm">Precio</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm model" id="txtPrecio" name="Precio">
+                </div>
+              </div>
+
+                  <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm">Cantidad</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control form-control-sm model" id="txtCantidad" name="Cantidad">
                 </div>
               </div>
 

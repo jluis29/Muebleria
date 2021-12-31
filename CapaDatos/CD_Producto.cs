@@ -54,7 +54,11 @@ namespace CapaDatos
                             Descripcion = dr["DescripcionProducto"].ToString(),
                             IdCategoria = Convert.ToInt32(dr["IdCategoria"].ToString()),
                             oCategoria = new Categoria() { Descripcion = dr["DescripcionCategoria"].ToString() },
-                            Activo = Convert.ToBoolean(dr["Activo"].ToString())
+                            Activo = Convert.ToBoolean(dr["Activo"].ToString()),
+                            Precio = Convert.ToInt32(dr["Precio"].ToString()),
+                            Cantidad = Convert.ToInt32(dr["Cantidad"].ToString()),
+                            Imagen = dr["Imagen"].ToString(),
+
                         });
                     }
                     dr.Close();
@@ -80,6 +84,8 @@ namespace CapaDatos
                     SqlCommand cmd = new SqlCommand("usp_RegistrarProducto", oConexion);
                     cmd.Parameters.AddWithValue("Nombre", oProducto.Nombre);
                     cmd.Parameters.AddWithValue("Descripcion", oProducto.Descripcion);
+                    cmd.Parameters.AddWithValue("Precio", oProducto.Precio);
+                    cmd.Parameters.AddWithValue("Cantidad", oProducto.Cantidad);
                     cmd.Parameters.AddWithValue("IdCategoria", oProducto.IdCategoria);
                     cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;
                     cmd.CommandType = CommandType.StoredProcedure;
@@ -110,6 +116,8 @@ namespace CapaDatos
                     cmd.Parameters.AddWithValue("IdProducto", oProducto.IdProducto);
                     cmd.Parameters.AddWithValue("Nombre", oProducto.Nombre);
                     cmd.Parameters.AddWithValue("Descripcion", oProducto.Descripcion);
+                    cmd.Parameters.AddWithValue("Precio", oProducto.Precio);
+                    cmd.Parameters.AddWithValue("Cantidad", oProducto.Cantidad);
                     cmd.Parameters.AddWithValue("IdCategoria", oProducto.IdCategoria);
                     cmd.Parameters.AddWithValue("Activo", oProducto.Activo);
                     cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;

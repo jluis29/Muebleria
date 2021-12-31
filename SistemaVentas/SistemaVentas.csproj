@@ -2968,6 +2968,7 @@
     <Content Include="Controlador\frmConsultarCompra\frmConsultarCompra.js" />
     <Content Include="Controlador\frmConsultarVenta\frmConsultarVenta.js" />
     <Content Include="Controlador\frmCrearVenta\frmCrearVenta.js" />
+    <Content Include="Controlador\frmCatalogo\frmCatalogo.js" />
     <Content Include="Controlador\frmProductoTienda\frmProductoTienda.js" />
     <Content Include="Controlador\frmProducto\frmProducto.js" />
     <Content Include="Controlador\frmProveedor\frmProveedor.js" />
@@ -2993,6 +2994,8 @@
     <Content Include="frmProductoTienda.aspx" />
     <Content Include="frmProveedor.aspx" />
     <Content Include="frmRegistrarCompra.aspx" />
+    <Content Include="frmCarrito.aspx" />
+    <Content Include="frmCatalogo.aspx" />
     <Content Include="frmRol.aspx" />
     <Content Include="frmRolPermiso.aspx" />
     <Content Include="frmTienda.aspx" />
@@ -3075,6 +3078,20 @@
     </Compile>
     <Compile Include="frmRegistrarCompra.aspx.designer.cs">
       <DependentUpon>frmRegistrarCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarrito.aspx.cs">
+      <DependentUpon>frmCarrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCarrito.aspx.designer.cs">
+      <DependentUpon>frmCarrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCatalogo.aspx.cs">
+      <DependentUpon>frmCatalogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCatalogo.aspx.designer.cs">
+      <DependentUpon>frmCatalogo.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmRol.aspx.cs">
       <DependentUpon>frmRol.aspx</DependentUpon>

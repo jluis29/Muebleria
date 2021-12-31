@@ -28,6 +28,8 @@ function cargarDatos() {
                         $("<td>").text(row.Descripcion),
                         $("<td>").text(row.oCategoria.Descripcion),
                         $("<td>").text(row.Activo == true ? "Activo" : "No Activo"),
+                        $("<td>").text(row.Precio),
+                        $("<td>").text(row.Cantidad),                      
                         $("<td>").append(
                             $("<button>").addClass("btn btn-sm btn-primary mr-1").text("Editar").data("producto", row),
                             $("<button>").addClass("btn btn-sm btn-danger").text("Eliminar").data("producto", row.IdProducto)
@@ -78,6 +80,8 @@ $('#tbProducto tbody').on('click', 'button[class="btn btn-sm btn-primary mr-1"]'
     $("#txtNombre").val(model.Nombre);
     $("#txtDescripcion").val(model.Descripcion);
     $("#cboCategoria").val(model.IdCategoria);
+    $("#txtPrecio").val(model.Precio);
+    $("#txtCantidad").val(model.Cantidad);
     $("#cboEstado").val(model.Activo == true ? 1 : 0);
     $("#cboEstado").prop("disabled", false);
     $("#txtCodigo").prop("disabled", true)
@@ -128,7 +132,8 @@ $('#btnNuevoProducto').on('click', function () {
     $("#txtNombre").val("");
     $("#txtDescripcion").val("");
     $("select#cboCategoria").prop('selectedIndex', 0);
-
+    $("#txtPrecio").val("");
+    $("#txtCantidad").val("");
 
     $("#cboEstado").val(1);
     $("#cboEstado").prop("disabled", true);
@@ -157,6 +162,8 @@ $('#btnGuardarCambios').on('click', function () {
                 Nombre: $("#txtNombre").val(),
                 Descripcion: $("#txtDescripcion").val(),
                 IdCategoria: $("#cboCategoria").val(),
+                Precio: $("#txtPrecio").val(),
+                Cantidad: $("#txtCantidad").val(),
                 Activo: ($("#cboEstado").val() == "1" ? true : false)
             }
         }

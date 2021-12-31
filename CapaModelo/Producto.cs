@@ -16,6 +16,11 @@ namespace CapaModelo
         public int IdCategoria { get; set; }
         public Categoria oCategoria { get; set; }
         public bool Activo { get; set; }
+        public decimal Precio { get; set; }
+        public int Cantidad { get; set; }
+        public string Imagen { get; set; }
+        
+
 
     }
 }
