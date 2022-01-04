@@ -34,5 +34,16 @@ namespace SistemaVentas
             }
         }
 
+        [WebMethod]
+        public static Respuesta<bool> Comprar(Carrito compras)
+        {
+            bool Respuesta = false;
+            Respuesta = CD_Carrito.Instancia.Carrito(compras);
+            return new Respuesta<bool>() { estado = Respuesta };
+
+        }
+
+
+
     }
 }

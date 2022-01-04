@@ -47,6 +47,8 @@ function cargarDatos() {
 $('#tbrol tbody').on('click', 'button[class="btn btn-sm btn-primary mr-1"]', function () {
 
     var model = $(this).data("rol")
+
+    console.log('model', model);
     $("#txtIdRol").val(model.IdRol);
     $("#cboEstado").val(model.Activo == true ? 1 : 0);
     $("#cboEstado").prop("disabled", false);
@@ -102,6 +104,11 @@ $('#btnNuevoRol').on('click', function () {
 })
 
 $('#btnGuardarCambios').on('click', function () {
+
+
+    console.log("llegue btnGuardarCompra");
+
+
     var camposvacios = false;
     var fields = $(".model").serializeArray();
 
@@ -164,6 +171,6 @@ $('#btnGuardarCambios').on('click', function () {
     } else {
         swal("Mensaje", "Es necesario completar todos los campos", "warning")
     }
-    
+
 
 })

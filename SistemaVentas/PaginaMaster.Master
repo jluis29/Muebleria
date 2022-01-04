@@ -67,6 +67,7 @@
           
         </ul>
         <ul class="nav navbar-nav navbar-right" style="color:#fff">
+          <li class="mr-4"><label id="saldo"></label></li>
           <li class="mr-4"><label id="nombreusuario"></label></li>
           <li class="mr-4"><label id="rolusuario"></label></li>
           <li class="mr-2"><a href="javascript:CerrarSesion();"><i class="bi bi-x"></i>Salir</a></li>
@@ -92,12 +93,20 @@
                 function (response) {
                     if (response.estado) {
 
+                        console.log('estamos aca',response);
+
                         $("#menu").html("");
-                        
+                        $("#saldo").append($("<i>").text(response.objeto.Monto).addClass("bi bi-credit-card mr-1"));
                         $("#nombreusuario").append($("<i>").text(response.objeto.NombreUsuario).addClass("bi bi-person-fill mr-1"));
                         $("#rolusuario").append($("<i>").text(response.objeto.oRol.Descripcion).addClass("bi bi-shield-fill-check mr-1"));
 
+                        localStorage.setItem('idUsuario', response.objeto.IdUsuario);
+                        localStorage.setItem('monto', response.objeto.Monto);
+
                         $.each(response.objeto.oListaMenu, function (i, menu) {
+
+                            
+
 
                             var li = null;
                             var div = null;
@@ -107,6 +116,9 @@
                                 )
                             );
                             div = $("<div>").addClass("dropdown-menu");
+
+
+
 
                             $.each(menu.oSubMenu, function (x, submenu) {
                                 if (submenu.Activo) {

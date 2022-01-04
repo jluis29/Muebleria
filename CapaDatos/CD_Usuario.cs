@@ -89,6 +89,7 @@ namespace CapaDatos
                                                   Correo = dato.Element("Correo").Value,
                                                   NombreUsuario = dato.Element("Usuario").Value,
                                                   Clave = dato.Element("Clave").Value,
+                                                  Monto = Decimal.Parse(dato.Element("Monto").Value)
 
                                               }).FirstOrDefault();
                                 rptUsuario.oTienda = (from dato in doc.Element("Usuario").Elements("DetalleTienda")
