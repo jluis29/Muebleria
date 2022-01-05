@@ -15,5 +15,13 @@ namespace CapaModelo
         public int Cantidad { get; set; }
         public Decimal Total { get; set; }
         public string Estado { get; set; }
+
+        public string Nombre { get; set; }
+
+        public string Imagen { get; set; }
+
+        public DateTime? Fecha { get; set; }
+
+        
     }
 }

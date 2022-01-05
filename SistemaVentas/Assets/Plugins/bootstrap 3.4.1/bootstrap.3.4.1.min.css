@@ -1858,8 +1858,8 @@ pre {
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px
+    margin-right: 0px;
+    margin-left: 0px
 }
 
 .row-no-gutters {
@@ -3363,8 +3363,8 @@ select[multiple].input-lg, textarea.input-lg {
 }
 
 .form-horizontal .form-group {
-    margin-right: -15px;
-    margin-left: -15px
+    margin-right: 0px;
+    margin-left: 0px
 }
 
 @media (min-width:768px) {
@@ -4585,8 +4585,8 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
-    margin-right: -15px;
-    margin-left: -15px
+    margin-right: 0px;
+    margin-left: 0px
 }
 
 @media (min-width:768px) {
@@ -4716,8 +4716,8 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
 .navbar-form {
     padding: 10px 15px;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: 0px;
+    margin-left: 0px;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
     -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.1);
@@ -4854,7 +4854,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
     .navbar-right {
         float: right !important;
-        margin-right: -15px
+        margin-right: 0px
     }
 
         .navbar-right ~ .navbar-right {

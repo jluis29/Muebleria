@@ -1,28 +1,27 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaster.Master" AutoEventWireup="true" CodeBehind="frmCarrito.aspx.cs" Inherits="SistemaVentas.frmRol" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaster.Master" AutoEventWireup="true" CodeBehind="frmCompras.aspx.cs" Inherits="SistemaVentas.frmCompras" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row">
+    <div class="row" style="margin-right: 0px;margin-left: 0px;">
             <div class="col-sm-12">
                <div class="card">
-                  <div class="card-header">
-                    Mantenedor Roles
+                  <div class="card-header" style="font-weight: 600;font-size:45px;
+                font-family: 'Lato-Black';">
+                    Detalle de Compras
                   </div>
                   <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <button id="btnNuevoRol" type="button" class="btn btn-sm btn-success">Nuevo</button>
-                            </div>
-                        </div>
-                      <hr />
                         <div class="row mt-3">
                             <div class="col-sm-12">
-                                <table id="tbrol" class="table table-striped table-bordered nowrap" style="width:100%">
+
+
+                                <table id="tbCompras" class="table table-striped table-bordered nowrap" style="width:100%">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
-                                            <th>Descripcion</th>
-                                            <th>Estado</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th>Total</th>
+                                            <th>Fecha</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -73,5 +72,5 @@
       </div>
     </div>
 
-    <script src="Controlador/frmRol/frmRol.js"></script>
+    <script src="Controlador/frmCompras/frmCompras.js"></script>
 </asp:Content>

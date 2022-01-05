@@ -86,6 +86,7 @@ namespace CapaDatos
                     cmd.Parameters.AddWithValue("Descripcion", oProducto.Descripcion);
                     cmd.Parameters.AddWithValue("Precio", oProducto.Precio);
                     cmd.Parameters.AddWithValue("Cantidad", oProducto.Cantidad);
+                    cmd.Parameters.AddWithValue("Imagen", oProducto.Imagen);
                     cmd.Parameters.AddWithValue("IdCategoria", oProducto.IdCategoria);
                     cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;
                     cmd.CommandType = CommandType.StoredProcedure;
@@ -118,6 +119,7 @@ namespace CapaDatos
                     cmd.Parameters.AddWithValue("Descripcion", oProducto.Descripcion);
                     cmd.Parameters.AddWithValue("Precio", oProducto.Precio);
                     cmd.Parameters.AddWithValue("Cantidad", oProducto.Cantidad);
+                    cmd.Parameters.AddWithValue("Imagen", oProducto.Imagen);
                     cmd.Parameters.AddWithValue("IdCategoria", oProducto.IdCategoria);
                     cmd.Parameters.AddWithValue("Activo", oProducto.Activo);
                     cmd.Parameters.Add("Resultado", SqlDbType.Bit).Direction = ParameterDirection.Output;

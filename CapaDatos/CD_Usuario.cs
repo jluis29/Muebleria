@@ -163,6 +163,7 @@ namespace CapaDatos
                             Nombres = dr["Nombres"].ToString(),
                             Apellidos = dr["Apellidos"].ToString(),
                             Correo = dr["Correo"].ToString(),
+                            Monto = Convert.ToDecimal(dr["Monto"].ToString()),
                             NombreUsuario = dr["Usuario"].ToString(),
                             Clave = dr["Clave"].ToString(),
                             IdTienda = Convert.ToInt32(dr["IdTienda"].ToString()),
@@ -198,6 +199,7 @@ namespace CapaDatos
                     cmd.Parameters.AddWithValue("Apellidos", oUsuario.Apellidos);
                     cmd.Parameters.AddWithValue("Correo", oUsuario.Correo);
                     cmd.Parameters.AddWithValue("Usuario", oUsuario.NombreUsuario);
+                    cmd.Parameters.AddWithValue("Monto", oUsuario.Monto);
                     cmd.Parameters.AddWithValue("Clave", oUsuario.Clave);
                     cmd.Parameters.AddWithValue("IdTienda", oUsuario.IdTienda);
                     cmd.Parameters.AddWithValue("IdRol", oUsuario.IdRol);
@@ -235,6 +237,7 @@ namespace CapaDatos
                     cmd.Parameters.AddWithValue("Apellidos", oUsuario.Apellidos);
                     cmd.Parameters.AddWithValue("Correo", oUsuario.Correo);
                     cmd.Parameters.AddWithValue("Usuario", oUsuario.NombreUsuario);
+                    cmd.Parameters.AddWithValue("Monto", oUsuario.Monto);
                     cmd.Parameters.AddWithValue("Clave", oUsuario.Clave);
                     cmd.Parameters.AddWithValue("IdTienda", oUsuario.IdTienda);
                     cmd.Parameters.AddWithValue("IdRol", oUsuario.IdRol);

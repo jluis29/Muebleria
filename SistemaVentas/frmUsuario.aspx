@@ -27,6 +27,7 @@
                                             <th>Nombres</th>
                                             <th>Apellidos</th>
                                             <th>Correo</th>
+                                            <th>Monto</th>
                                             <th>Estado</th>
                                             <th></th>
                                         </tr>
@@ -113,8 +114,14 @@
                         <option value="0">No Activo</option>
                     </select>
                 </div>
-              </div>
 
+              </div>
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Monto</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control form-control-sm model" id="txtMonto" name="Monto">
+                </div>
+              </div>
 
             </form>
           </div>

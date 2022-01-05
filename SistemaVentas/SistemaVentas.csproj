@@ -2964,6 +2964,7 @@
     <Content Include="Assets\Plugins\Simple_Line_Icons\simple-line-icons.min.css" />
     <Content Include="Assets\Plugins\sweetalert2\sweetalert.css" />
     <Content Include="Assets\Plugins\sweetalert2\sweetalert.js" />
+    <Content Include="Controlador\frmCompras\frmCompras.js" />
     <Content Include="Controlador\frmCategoria\frmCategoria.js" />
     <Content Include="Controlador\frmConsultarCompra\frmConsultarCompra.js" />
     <Content Include="Controlador\frmConsultarVenta\frmConsultarVenta.js" />
@@ -2994,7 +2995,7 @@
     <Content Include="frmProductoTienda.aspx" />
     <Content Include="frmProveedor.aspx" />
     <Content Include="frmRegistrarCompra.aspx" />
-    <Content Include="frmCarrito.aspx" />
+    <Content Include="frmCompras.aspx" />
     <Content Include="frmCatalogo.aspx" />
     <Content Include="frmRol.aspx" />
     <Content Include="frmRolPermiso.aspx" />
@@ -3079,12 +3080,12 @@
     <Compile Include="frmRegistrarCompra.aspx.designer.cs">
       <DependentUpon>frmRegistrarCompra.aspx</DependentUpon>
     </Compile>
-    <Compile Include="frmCarrito.aspx.cs">
-      <DependentUpon>frmCarrito.aspx</DependentUpon>
+    <Compile Include="frmCompras.aspx.cs">
+      <DependentUpon>frmCompras.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="frmCarrito.aspx.designer.cs">
-      <DependentUpon>frmCarrito.aspx</DependentUpon>
+    <Compile Include="frmCompras.aspx.designer.cs">
+      <DependentUpon>frmCompras.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmCatalogo.aspx.cs">
       <DependentUpon>frmCatalogo.aspx</DependentUpon>

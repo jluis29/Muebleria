@@ -544,7 +544,7 @@ pre {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
+    margin-right: 0px;
     margin-left: -15px
 }
 
@@ -2156,7 +2156,7 @@ pre {
     opacity: 1
 }
 
-input[type=date].form-control, input[type=datetime-local].form-control, input[type=month].form-control, input[type=time].form-control {
+input[type=date].form-control, input[type=xxxx,x-ms-webview,x-ms-webview,xc.c.cmx.c-local].form-control, input[type=month].form-control, input[type=time].form-control {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none
@@ -4817,7 +4817,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
         display: flex;
         -ms-flex-flow: row wrap;
         flex-flow: row wrap;
-        margin-right: -15px;
+        margin-right: 0px;
         margin-left: -15px
     }
 

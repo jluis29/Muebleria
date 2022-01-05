@@ -2,17 +2,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row">
-            <div class="col-sm-12">
+    <div class="row" style="margin-right: 0px;margin-left: 0px;">
+            <div class="col-12">
                <div class="card">
-                  <div class="card-header" style="font-weight: 600;margin-bottom:20px;text-align: center;vertical-align: middle;font-size:45px;
+                  <div class="card-header" style="font-weight: 600;text-align: center;vertical-align: middle;font-size:45px;
                 font-family: 'Lato-Black';">
                     CASA GRANDE
 
                   </div>
 
-                
-                   <table id="tbProducto" class="table table-bordered" style="width:100%;">                               
+                </div>
+
+
+                <table id="tbProducto" class="table table-bordered" style="width:100%;">                               
                             
                        <thead>
                                         <tr>       
@@ -29,9 +31,8 @@
 
                              </tbody>
                     </table>
-
-
-             
+                 </div>
+                    
     </div>
 
 

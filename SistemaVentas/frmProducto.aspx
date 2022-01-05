@@ -28,6 +28,7 @@
                                             <th>Estado</th>
                                             <th>Precio</th>
                                             <th>Cantidad</th>
+                                            <th>Imagen</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -104,6 +105,13 @@
                         <option value="1">Activo</option>
                         <option value="0">No Activo</option>
                     </select>
+                </div>
+              </div>
+
+                <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Imagen</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control form-control-sm model" id="txtImagen" name="Imagen">
                 </div>
               </div>
 

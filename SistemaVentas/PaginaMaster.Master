@@ -56,7 +56,7 @@
   <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a style="color: #E1742D;" class="navbar-brand" href="Inicio.aspx">Sistema de Ventas</a>
       <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="false">
         <span class="navbar-toggler-icon"></span>
@@ -78,7 +78,7 @@
   
     
 
-    <div class="container-fluid">
+    <div >
        
       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
       </asp:ContentPlaceHolder>
@@ -134,8 +134,8 @@
                             li.append(div);
                             li.appendTo("#menu");
                         })
-                        $("#menu").append($("<a>").addClass("nav-link").attr({ "href": "https://ouo.io/VRgLgZ","target":"_blank"}).append(
-                            "<i class='fas fa-donate' aria-hidden='true'></i>" + " Ver Otras Opciones"
+                        $("#menu").append($("<a>").addClass("nav-link").attr({ "href": "https://proyectosala1.blogspot.com/","target":"_blank"}).append(
+                            "<i class='fas fa-donate' aria-hidden='true'></i>" + " Ver Blog"
                         ));
                         
                     } else {

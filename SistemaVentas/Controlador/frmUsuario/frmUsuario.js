@@ -28,6 +28,7 @@ function cargarDatos() {
                         $("<td>").text(row.Nombres),
                         $("<td>").text(row.Apellidos),
                         $("<td>").text(row.Correo),
+                        $("<td>").text(row.Monto),
                         $("<td>").text(row.Activo == true ? "Activo" : "No Activo"),
                         $("<td>").append(
                             $("<button>").addClass("btn btn-sm btn-primary mr-1").text("Editar").data("usuario", row),
@@ -96,6 +97,7 @@ $('#tbUsuario tbody').on('click', 'button[class="btn btn-sm btn-primary mr-1"]',
     $("#txtIdUsuario").val(model.IdUsuario);
     $("#txtNombres").val(model.Nombres);
     $("#txtApellidos").val(model.Apellidos);
+    $("#txtMonto").val(model.Monto);
     $("#txtCorreo").val(model.Correo);
     $("#txtUsuario").val(model.NombreUsuario);
     $("#txtClave").val(model.Clave);
@@ -147,12 +149,12 @@ $('#btnNuevoRol').on('click', function () {
     $("#txtIdUsuario").val(0);
     $("#txtNombres").val("");
     $("#txtApellidos").val("");
+    $("#txtMonto").val(0);
     $("#txtCorreo").val("");
     $("#txtUsuario").val("");
     $("#txtClave").val("");
     $("select#cboTienda").prop('selectedIndex', 0);
     $("select#cboRol").prop('selectedIndex', 0);
-
 
     $("#cboEstado").val(1);
     $("#cboEstado").prop("disabled", true);
@@ -180,6 +182,7 @@ $('#btnGuardarCambios').on('click', function () {
                 IdUsuario: parseInt($("#txtIdUsuario").val()),
                 Nombres: $("#txtNombres").val(),
                 Apellidos: $("#txtApellidos").val(),
+                Monto: parseFloat($("#txtMonto").val()),
                 Correo: $("#txtCorreo").val(),
                 NombreUsuario: $("#txtUsuario").val(),
                 Clave: $("#txtClave").val(),
@@ -188,6 +191,9 @@ $('#btnGuardarCambios').on('click', function () {
                 Activo: ($("#cboEstado").val() == "1" ? true : false)
             }
         }
+
+
+        console.log("requestmONTO", request);
 
         
         if (parseInt($("#txtIdUsuario").val()) == 0) {

@@ -106,35 +106,39 @@ $('#btnGuardarCompra').on('click', function () {
         console.log("request2", parseInt(localStorage.getItem('monto')));
 
         
+        if (parseInt($("#txtTotal").val())>0) {
+            if (parseInt($("#txtTotal").val()) <= parseInt(localStorage.getItem('monto'))) {
 
 
-        if (parseInt($("#txtTotal").val()) <= parseInt(localStorage.getItem('monto'))){
+                AjaxPost("../frmCatalogo.aspx/Comprar", JSON.stringify(request),
+                    function (response) {
+                        $(".modal-body").LoadingOverlay("hide");
+                        if (response.estado) {
+                            cargarDatos();
+                            $('#modalCompra').modal('hide');
+                            swal("Mensaje", "Se Realizo la Compra Correctamente", "success");
+                        } else {
+                            swal("oops!", "No se pudo editar el rol", "warning")
+                        }
+                    },
+                    function () {
+                        $(".modal-body").LoadingOverlay("hide");
+                    },
+                    function () {
+                        $(".modal-body").LoadingOverlay("show");
+                    })
 
 
-            AjaxPost("../frmCatalogo.aspx/Comprar", JSON.stringify(request),
-                function (response) {
-                    $(".modal-body").LoadingOverlay("hide");
-                    if (response.estado) {
-                        cargarDatos();
-                        $('#modalCompra').modal('hide');
-                        swal("Mensaje", "Se Realizo la Compra Correctamente", "success");
-                    } else {
-                        swal("oops!", "No se pudo editar el rol", "warning")
-                    }
-                },
-                function () {
-                    $(".modal-body").LoadingOverlay("hide");
-                },
-                function () {
-                    $(".modal-body").LoadingOverlay("show");
-                })
 
-            
-
+            }
+            else {
+                swal("Mensaje", "Es Total sobrepasa al Saldo", "warning");
+            }
+        } else {
+            swal("Mensaje", "Ejecuta la cantidad con Enter", "warning");
         }
-        else {
-            swal("Mensaje", "Es Total sobrepasa al Saldo", "warning");
-        }
+
+       
 
     }
        
